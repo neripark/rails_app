@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
 
   def hello
     text = 'Hello World!!!!!'
-    render plain: text
+    text2 = params
+    render plain: "parameter: #{text2}"
   end
 end
